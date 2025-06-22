@@ -18,6 +18,7 @@
       color: #0a2036;
       text-decoration: none;
       font-weight: 600;
+      transition: color 0.2s;
     }
     a:hover {
       text-decoration: underline;
@@ -34,26 +35,52 @@
     }
     @media (max-width: 600px) {
       html { font-size: 4vw; max-width: 100vw; }
-      body { margin: 4vh auto 0; padding: 0 0.5rem; }
+      body { margin: 0; padding: 52px 0.5rem 0 20px; }
       h1 { font-size: 2rem; }
+      nav {
+        position: fixed;
+        top: 56px;
+        left: 18px;
+        width: calc(100vw - 36px);
+        background: #e0e0e0;
+        padding: 12px 0 12px 18px;
+        margin: 0;
+        border-radius: 8px;
+        z-index: 1100;
+      }
       nav a { margin-right: 0.5rem; }
+      .ribbon {
+        width: 100vw;
+        height: 36px;
+        background: #0a2036;
+        position: fixed;
+        left: 0;
+        z-index: 1200;
+      }
+      .ribbon.top { top: 0; }
+      .ribbon.bottom { bottom: 0; }
+    }
+    .nav-current {
+      color: #888;
+      pointer-events: none;
+      cursor: default;
     }
   </style>
 </head>
 <body>
+  <div class="ribbon top"></div>
   <nav>
     <a href="index.html">me</a>
     <a href="posts.html">posts</a>
-    <a href="work.html">work</a>
+    <a href="work.html" class="nav-current">work</a>
   </nav>
 
   <h1>work</h1>
-  <p style="max-width: 600px;">
-    I've been thinking about agricultural systems for a long time.<br>
- Soon you can hire my company <strong>groonary</strong> to help implement<br>
- simple, well-tested sensors into your process.<br>
-   <br>
- currently, only irrigation.
+  <p style="max-width: 375px;">
+    I've been thinking about agricultural systems for a long time. Soon you can hire my company <strong>groonary</strong> to help implement simple, well-tested sensors into your process.<br>
+    <br>
+    currently, only irrigation.
   </p>
+  <div class="ribbon bottom"></div>
 </body>
 </html>

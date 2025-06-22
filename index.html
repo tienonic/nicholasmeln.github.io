@@ -13,13 +13,24 @@
     a:hover{text-decoration:underline}
     @media (max-width: 600px) {
       html { font-size: 4vw; }
-      body { max-width: 100vw; margin: 4vh auto 0; padding: 0 0.5rem; }
+      body { max-width: 100vw; margin: 4vh auto 0; padding: 36px 0.5rem 0 24px; }
       h1 { font-size: 2rem; }
       a { font-size: 1.1rem; }
+      .ribbon {
+        width: 100vw;
+        height: 36px;
+        background: #0a2036;
+        position: fixed;
+        left: 0;
+        z-index: 1000;
+      }
+      .ribbon.top { top: 0; }
+      .ribbon.bottom { bottom: 0; }
     }
   </style>
 </head>
 <body>
+  <div class="ribbon top"></div>
   <h1>nicholas melnichenko</h1>
   <a href="posts.html">posts</a>
   <a href="work.html">work</a>
@@ -34,7 +45,7 @@
     if interested in working with me, or learning more, email me at 
     <a href="mailto:melnichenko.nicholas@gmail.com" target="_blank">melnichenko.nicholas@gmail.com</a>
   </p>
-  
+  <div class="ribbon bottom"></div>
 </body>
 </html>
   
