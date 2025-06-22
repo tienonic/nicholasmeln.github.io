@@ -35,13 +35,13 @@
     }
     @media (max-width: 600px) {
       html { font-size: 4vw; max-width: 100vw; }
-      body { margin: 0; padding: 52px 0.5rem 0 20px; }
+      body { margin: 0; padding: 52px 0.5rem 0 8px; }
       h1 { font-size: 2rem; }
       nav {
         position: fixed;
-        top: 56px;
-        left: 18px;
-        width: calc(100vw - 36px);
+        top: 68px;
+        left: 2px;
+        width: calc(100vw - 2px);
         background: #e0e0e0;
         padding: 12px 0 12px 18px;
         margin: 0;
@@ -51,14 +51,19 @@
       nav a { margin-right: 0.5rem; }
       .ribbon {
         width: 100vw;
-        height: 36px;
+        height: 64px;
         background: #0a2036;
         position: fixed;
         left: 0;
         z-index: 1200;
+        transition: none;
       }
-      .ribbon.top { top: 0; }
-      .ribbon.bottom { bottom: 0; }
+      .ribbon.top {
+        top: 0;
+      }
+      .ribbon.bottom {
+        bottom: 0;
+      }
     }
     .nav-current {
       color: #888;
