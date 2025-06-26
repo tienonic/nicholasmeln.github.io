@@ -53,8 +53,8 @@
       font-weight: 700;
     }
     @media (max-width: 600px) {
-      html { font-size: 4vw; max-width: 100vw; background: #0a2036; }
-      body { background: #0a2036; margin: 0; padding: 52px 0.5rem 0 8px; }
+      html { font-size: 4vw; max-width: 100vw; background: #e0e0e0; }
+      body { background: #e0e0e0; margin: 0; padding: 52px 0.5rem 0 8px; }
       h1 { font-size: 2rem; }
       nav {
         position: fixed;
@@ -69,23 +69,7 @@
         transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
       }
       nav a { margin-right: 0.5rem; }
-      .ribbon {
-        width: 100vw;
-        height: 11px;
-        background: #0a2036;
-        position: fixed;
-        left: 0;
-        z-index: 1200;
-        transition: none;
-      }
-      .ribbon.top {
-        top: 0;
-        width: 100%;
-        height: 11px;
-        padding-top: env(safe-area-inset-top);
-        padding-top: max(env(safe-area-inset-top), 11px);
-        z-index: 9999;
-      }
+      .ribbon, .ribbon.top { background: #0a2036; }
       .ribbon.bottom {
         bottom: -64px;
         height: 64px;
