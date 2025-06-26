@@ -55,7 +55,7 @@
     }
     @media (max-width: 600px) {
       html { font-size: 4vw; max-width: 100vw; background: #e0e0e0; }
-      body { background: #e0e0e0; margin: 0; padding: 52px 0.5rem 0 8px; }
+      body { background: #e0e0e0; margin: 0; padding: 52px 1rem 0 16px; }
       h1 { font-size: 2rem; }
       nav {
         position: fixed;
@@ -79,15 +79,7 @@
         transform: translateY(-100%);
       }
     }
-    .ribbon {
-      width: 100vw;
-      height: 11px;
-      background: #0a2036;
-      position: fixed;
-      left: 0;
-      z-index: 1200;
-      transition: none;
-    }
+    .ribbon, .ribbon.top { display: none; }
     .ribbon.top {
       top: 0;
       width: 100%;
