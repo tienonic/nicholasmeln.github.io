@@ -79,6 +79,23 @@
         transform: translateY(-100%);
       }
     }
+    .ribbon {
+      width: 100vw;
+      height: 11px;
+      background: #0a2036;
+      position: fixed;
+      left: 0;
+      z-index: 1200;
+      transition: none;
+    }
+    .ribbon.top {
+      top: 0;
+      width: 100%;
+      height: 11px;
+      padding-top: env(safe-area-inset-top);
+      padding-top: max(env(safe-area-inset-top), 11px);
+      z-index: 9999;
+    }
     .nav-current {
       color: #888;
       pointer-events: none;
